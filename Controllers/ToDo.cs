@@ -36,7 +36,6 @@ public class ToDoController : ControllerBase
             return NotFound("Item not found");
         }
         item.Name = updatedItem.Name;
-        item.IsCompleted = updatedItem.IsCompleted;
         return Ok(item);
     }
 
